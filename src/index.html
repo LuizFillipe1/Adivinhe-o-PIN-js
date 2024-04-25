@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avaliação Sprint 1</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet" />
+    <script src="js/scripts.js" defer></script>
+</head>
+
+<body onload="init()">
+    <div class="container">
+        <div id="calc-container">
+            <h2>Adivinhe o PIN de 1000 a 9999</h2>
+            <form id="guess-form">
+                <div class="form-inputs">
+                    <div class="form-control">
+                        <label for="guess-number">Número:</label>
+                        <input type="number" name="guess-number" id="guess-number" placeholder="Exemplo: 2045"
+                            required />
+                    </div>
+                </div>
+                <div class="action-control">
+                    <button id="guess-btn">Adivinhar</button>
+                    <button id="new-game-btn">Novo Jogo</button>
+                </div>
+            </form>
+        </div>
+        <div id="info-container" class="hide">
+            <p id="info"><span></span></p>
+        </div>
+        <div id="guess-response-container" class="hide">
+            <p id="guess-result"><span></span></p>
+            <p id="attempts">Tentativas: <span></span></p>
+            <p>Números tentados: </p>
+            <span id="guess-numbers"></span>
+        </div>
+    </div>
+</body>
+
+</html>
